@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="14dp"
+        android:elevation="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_view"
+            app:defaultQueryHint="Search News"
+            android:focusedByDefault="false"
+            app:iconifiedByDefault="false"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            tools:targetApi="o" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <Spinner
+        android:id="@+id/country_set_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/country_frame"/>
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_1"
+                android:text="@string/business"
+                android:textSize="12sp"
+                android:textColor="@color/blue1"
+                android:padding="6dp"
+                android:background="@drawable/btn_background"
+                android:textAllCaps="false"
+                android:layout_margin="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/buttonBarButtonStyle" />
+
+            <Button
+                android:id="@+id/btn_2"
+                android:text="@string/entertainment"
+                android:textSize="12sp"
+                android:textColor="@color/blue1"
+                android:padding="6dp"
+                android:textAllCaps="false"
+                android:background="@drawable/btn_background"
+                android:layout_margin="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/buttonBarButtonStyle" />
+            <Button
+                android:id="@+id/btn_3"
+                android:text="@string/general"
+                android:textSize="12sp"
+                android:textColor="@color/blue1"
+                android:padding="6dp"
+                android:textAllCaps="false"
+                android:background="@drawable/btn_background"
+                android:layout_margin="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/buttonBarButtonStyle" />
+            <Button
+                android:id="@+id/btn_4"
+                android:text="@string/health"
+                android:textSize="12sp"
+                android:textColor="@color/blue1"
+                android:background="@drawable/btn_background"
+                android:padding="6dp"
+                android:textAllCaps="false"
+                android:layout_margin="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/buttonBarButtonStyle" />
+            <Button
+                android:id="@+id/btn_5"
+                android:text="@string/science"
+                android:textSize="12sp"
+                android:textColor="@color/blue1"
+                android:padding="6dp"
+                android:background="@drawable/btn_background"
+                android:textAllCaps="false"
+                android:layout_margin="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/buttonBarButtonStyle" />
+            <Button
+                android:id="@+id/btn_6"
+                android:text="@string/sports"
+                android:textSize="12sp"
+                android:textColor="@color/blue1"
+                android:padding="6dp"
+                android:textAllCaps="false"
+                android:background="@drawable/btn_background"
+                android:layout_margin="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/buttonBarButtonStyle" />
+            <Button
+                android:id="@+id/btn_7"
+                android:text="@string/technology"
+                android:textSize="12sp"
+                android:textColor="@color/blue1"
+                android:padding="6dp"
+                android:textAllCaps="false"
+                android:background="@drawable/btn_background"
+                android:layout_margin="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/buttonBarButtonStyle" />
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler_main"
+        android:layout_margin="8dp"/>
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">NewApplication</string>
+    <string name="api_key">c8ff7f5ad1e04a349772cba4416fc3bc</string>
+    <string name="share">share</string>
+
+
+    <string-array name="country_frame">
+
+        <item>Select country you want to get news from</item>
+        <item>ae</item>
+        <item>ar</item>
+        <item>at</item>
+        <item>be</item>
+        <item>bg</item>
+        <item>br</item>
+        <item>ca</item>
+        <item>ch</item>
+        <item>cn</item>
+        <item>co</item>
+        <item>cz</item>
+        <item>de</item>
+        <item>eg</item>
+        <item>fr</item>
+        <item>ug</item>
+        <item>gr</item>
+        <item>hk</item>
+        <item>id</item>
+        <item>ie</item>
+        <item>il</item>
+        <item>in</item>
+        <item>it</item>
+        <item>jp</item>
+        <item>kr</item>
+        <item>lt</item>
+        <item>lv</item>
+        <item>ma</item>
+        <item>mx</item>
+        <item>my</item>
+        <item>ng</item>
+        <item>nl</item>
+        <item>no</item>
+        <item>nz</item>
+        <item>ph</item>
+        <item>pl</item>
+        <item>pt</item>
+        <item>ro</item>
+        <item>rs</item>
+        <item>ru</item>
+        <item>sa</item>
+        <item>se</item>
+        <item>sg</item>
+        <item>si</item>
+        <item>sk</item>
+        <item>th</item>
+        <item>tr</item>
+        <item>tw</item>
+        <item>ua</item>
+        <item>us</item>
+        <item>ve</item>
+        <item>za</item>
+
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="technology">technology</string>
+    <string name="sports">sports</string>
+    <string name="health">health</string>
+    <string name="entertainment">entertainment</string>
+    <string name="general">general</string>
+    <string name="science">science</string>
+    <string name="business">business</string>
+</resources>
